@@ -12,6 +12,9 @@
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+	   <script src="js/images-grid.js"></script>
+        <link rel="stylesheet" href="css/images-grid.css">
 </head>
 <body style="background: #000">
 
@@ -32,13 +35,8 @@
 			</ul>
 		</nav><!-- end navigation menu -->
 	</header><!-- end header -->
-    <div class="description" style="background: #000">
-        <h4 style="font: bold">Thesis Image Archive <br>In Progress</h4>
-        &nbsp;
-        <p style="color: #dcdddd">Externalization versus Internalization<br>Introvert versus Extrovert personality<br>Being literal versus Poetic<br>Direct versus Indirect<br><br>This project centers around the use of indirect, or euphemistic, visual language and circumlocution, in combination with every day, personal objects. My project uses every day, personal objects as memory triggers that represent my identity and perspective. I’m interested in understanding the way metaphor changes the way we understand these ordinary objects. I photographed everyday objects taken with me from Korea to the US, which serve as touchstones; means of portraying myself as projected onto objects.<br><br><br><p style="color: #3f3f3f">All Images Copyright © 2017 Heesung Kim
-
-</p><br><br></div>
-	<section class="main clearfix inner">
+  
+	
 
 <!--
 		<section class="top">	
@@ -87,24 +85,14 @@
 		</section>
         
 -->
-        <img src="img/PC_07.jpg"/><img src="img/PC_08.jpg"/><img src="img/PC_09.jpg"/><img src="img/PC_10.jpg"/>
-        <img src="img/PC_11.jpg"/><img src="img/PC_12.jpg"/><img src="img/PC_13.jpg"/><img src="img/th_01.jpg"/>
-        <img src="img/PC_14.jpg"/><img src="img/th_04.jpg"/><img src="img/th_10.jpg"/>
-        <img src="img/PC_15.jpg"/><img src="img/PC_16.jpg"/><img src="img/th_08.jpg"/><img src="img/PC_17.jpg"/>
-        <img src="img/PC_18.jpg"/><img src="img/th_25.jpg"/><img src="img/PC_19.jpg"/><img src="img/PC_20.jpg"/><img src="img/PC_21.jpg"/>
-        <img src="img/PC_22.jpg"/><img src="img/PC_24.jpg"/><img src="img/PC_23.jpg"/><img src="img/PC_25.jpg"/>
-        <img src="img/PC_26.jpg"/><img src="img/PC_27.jpg"/><img src="img/PC_28.jpg"/><img src="img/PC_29.jpg"/>
-        <img src="img/th_18.jpg"/><img src="img/PC_30_01.jpg"/><img src="img/PC_35.jpg"/><br><br><img src="img/PC_32.jpg"/>
-        <img src="img/PC_33.jpg"/><img src="img/th_14.jpg"/><img src="img/th_15.jpg"/><br><br><img src="img/th_19.jpg"/>
-        <img src="img/th_24.jpg"/><img src="img/th_21.jpg"/><img src="img/th_22.jpg"/><img src="img/th_23.jpg"/>
-        <img src="img/PC_06.jpg"/><img src="img/PC.jpg"/><img src="img/PC_01.jpg"/><img src="img/PC_02.jpg"/>
-        <img src="img/PC_03.jpg"/><img src="img/PC_04.jpg"/><img src="img/PC_05.jpg"/><br><br><br><br><br><br><br><br>
+      <div id="gallery"></div>
+
 
 
         
         
         
-	</section><!-- end main -->
+	<!-- end main -->
 	
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -114,6 +102,43 @@
 
   ga('create', 'UA-94076627-1', 'auto');
   ga('send', 'pageview');
+
+      $('#gallery').imagesGrid({
+                images: [
+                    { src: 'img/PC_07.jpg', thumbnail: 'img/PC_07.jpg' },
+					{ src: 'img/PC_09.jpg', thumbnail: 'img/PC_09.jpg' },
+					{ src: 'img/PC_10.jpg', thumbnail: 'img/PC_10.jpg' },
+                    { src: 'img/PC_41.jpg', thumbnail: 'img/PC_41.jpg' },
+                    { src: 'img/PC_40.jpg', thumbnail: 'img/PC_40.jpg' },
+                    { src: 'img/PC_42.jpg', thumbnail: 'img/PC_42.jpg' },
+                    { src: 'img/PC_37.jpg', thumbnail: 'img/PC_37.jpg' },
+                    { src: 'img/PC_38.jpg', thumbnail: 'img/PC_38.jpg' },
+                    { src: 'img/PC_44.jpg', thumbnail: 'img/PC_44.jpg' },
+                    { src: 'img/PC_45.jpg', thumbnail: 'img/PC_45.jpg' },
+					{ src: 'img/PC_11.jpg', thumbnail: 'img/PC_11.jpg' },
+					{ src: 'img/PC_12.jpg', thumbnail: 'img/PC_12.jpg' },
+					{ src: 'img/PC_13.jpg', thumbnail: 'img/PC_13.jpg' },
+					{ src: 'img/PC_14.jpg', thumbnail: 'img/PC_14.jpg' },
+					{ src: 'img/PC_15.jpg', thumbnail: 'img/PC_15.jpg' },
+					{ src: 'img/PC_16.jpg', thumbnail: 'img/PC_16.jpg' },
+                    { src: 'img/PC_43.jpg', thumbnail: 'img/PC_43.jpg' },
+					{ src: 'img/PC_17.jpg', thumbnail: 'img/PC_17.jpg' },
+					{ src: 'img/PC_18.jpg', thumbnail: 'img/PC_18.jpg' },
+					{ src: 'img/PC_19.jpg', thumbnail: 'img/PC_19.jpg' },
+                    { src: 'img/PC_36.jpg', thumbnail: 'img/PC_36.jpg' },
+                    { src: 'img/PC_20.jpg', thumbnail: 'img/PC_20.jpg' },
+                    { src: 'img/PC_21.jpg', thumbnail: 'img/PC_21.jpg' },
+                    { src: 'img/PC_22.jpg', thumbnail: 'img/PC_22.jpg' },
+                    { src: 'img/PC_27.jpg', thumbnail: 'img/PC_27.jpg' },
+                    { src: 'img/PC_28.jpg', thumbnail: 'img/PC_28.jpg' },
+                    { src: 'img/PC_29.jpg', thumbnail: 'img/PC_29.jpg' },
+
+                    
+                ],
+                align: false,
+				showViewAll:false,
+				cells: 3
+            });
 
 </script>
     </body>
