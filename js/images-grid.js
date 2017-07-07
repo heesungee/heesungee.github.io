@@ -169,7 +169,8 @@
     }
 
     ImagesGrid.prototype.renderGridItem = function(image, index) {
-
+        
+        
         var src = image,
             alt = '',
             title = '',
@@ -237,7 +238,7 @@
     }
 
     ImagesGrid.prototype.onImageClick = function(event) {
-
+        $('#header').hide();
         var opts = this.opts,
             img = $(event.currentTarget),
             imageIndex;
@@ -373,7 +374,7 @@
     }
 
     ImagesGridModal.prototype.close = function(event) {
-
+         $('#header').show();
         if (!this.$modal) {
             return;
         }
