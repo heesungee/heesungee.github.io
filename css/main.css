@@ -712,3 +712,26 @@ header nav ul li a:hover{
         line-height: 160%;
     }
 }
+
+.bx-wrapper{
+    padding-right:20px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+#wraper
+{
+height: 600px;
+margin-top:100px;
+margin-left: 22.5%;
+}
+#c1
+{
+width: 15px;vertical-align:bottom;
+    padding-left: 16px;  
+    display:inline-block;
+}
+
+#b2
+{
+ height: 400px;
+}
